@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>ADMIN</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Admin</h1>
+    <br/><br/>
+    <p>List of users and their respective passwords:</p>
+    <br/>
+    {% for user in users %}
+        <p>{{ user }}</p>
+    {% endfor %}
+{% endblock %}

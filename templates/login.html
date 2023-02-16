@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Login Form</title>
+{% endblock %}
+
+{% block body %}
+    <h1 style="text-align: center">Login</h1>
+    <br/>
+    <br/>
+    <form method="post" class="the_form">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="a" name="name">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="a" name="password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <br/><button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
